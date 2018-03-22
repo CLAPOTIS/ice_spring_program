@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <script type="text/javascript">
+            if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+                var version = parseFloat(RegExp.$1);
+                console.log(version);
+                if (version > 2.3) {
+                    var phoneScale = parseInt(window.screen.width) / 800;
+                    document.write('<meta name="viewport" content="width=800, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi,minimal-ui">');
+                } else {
+                    document.write('<meta name="viewport" content="width=800, target-densitydpi=device-dpi,minimal-ui">');
+                }
+            } else {
+                document.write('<meta name="viewport" content="width=800, user-scalable=no, target-densitydpi=device-dpi,minimal-ui">');
+            }
+        </script>
+        <meta name="viewport" content="width=800, user-scalable=no, target-densitydpi=device-dpi">
+        <title>清泉计划</title>
+        <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+        <div class="swiper-container">
+            <div id="audio_btn" class="rotate">
+                <audio id="bg_music" src="audio/bg.mp3 " autoplay preload loop></audio>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="slide1">
+                    <div class="logo ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+                    <div class="leaf ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"></div>
+                    <div class="title ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.3s"></div>
+                    <div class="lemon ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.8s" swiper-animate-delay="2.1s"></div>
+                    <div class="desc ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="2.9s"></div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="swiper-slide" id="slide2">
+                    <div class="logo ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+                    <div class="title ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s"></div>
+                    <div class="show">
+                        <img class="pic_1 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.6s" src="images/pic_1.png"/>
+                        <img class="pic_2 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.8s" swiper-animate-delay="2.4s" src="images/pic_2.png"/>
+                        <img class="pic_3 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.8s" swiper-animate-delay="3.2s" src="images/pic_3.png"/>
+                        <img class="pic_4 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.8s" swiper-animate-delay="4.0s" src="images/pic_4.png"/>
+                    </div>
+                    <div class="desc ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="5.3s"></div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="swiper-slide" id="slide3">
+                    <div class="show">
+                        <img class="pic_5 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s" src="images/pic_5.png"/>
+                        <img class="pic_6 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="1.1s" src="images/pic_6.png"/>
+                        <img class="pic_7 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="1.9s" src="images/pic_7.png"/>
+                        <img class="pic_8 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="2.7s" src="images/pic_8.png"/>
+                        <img class="pic_9 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="3.5s" src="images/pic_9.png"/>
+                        <img class="pic_10 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="4.3s" src="images/pic_10.png"/>
+                    </div>
+                    <div class="footer ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="5.0s">
+                        <div class="desc"></div>
+                        <div class="sponsor"></div>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping" id="slide4">
+                    <div class="logo ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+                    <div class="title ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s" swiper-animate-delay="1.6s"></div>
+                    <div class="temp ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                        <div class="subtitle"></div>
+                        <input class="input" type="text" name="temp"/>
+                        <button class="finish_btn"></button>
+                    </div>
+                    <div class="water ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.8s" swiper-animate-delay="1.6s"></div>
+                </div>
+                <div class="swiper-slide" id="slide5">
+                    <div class="logo ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+                    <div class="title ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s" swiper-animate-delay="1.6s"></div>
+                    <div class="share_icon ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s" swiper-animate-delay="1.6s"></div>
+                    <div class="conclusion ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                        <div class="result">我的工作温度为<span class="value">**</span>度<br>我与高温工作者相差<span class="D_value">**</span>度<br>关爱高温工作者<br>感谢他们的高温付出</div>
+                    </div>
+                    <div class="share ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.8s" swiper-animate-delay="1.6s"></div>
+                </div>
+            </div>
+        </div>
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+        <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+        <script>
+            //判断访问终端
+            var browser={
+                versions:function(){
+                    var u = navigator.userAgent, app = navigator.appVersion;
+                    return {
+                        trident: u.indexOf('Trident') > -1, //IE内核
+                        presto: u.indexOf('Presto') > -1, //opera内核
+                        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                        android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+                        iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                        iPad: u.indexOf('iPad') > -1, //是否iPad
+                        webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                        weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+                        qq: u.match(/\sQQ/i) == " qq" //是否QQ
+                    };
+                }(),
+                language:(navigator.browserLanguage || navigator.language).toLowerCase()
+            }
+        </script>
+	</body>
+</html>
